@@ -9,8 +9,8 @@ test
 Napatsawan  Somsuk 570611017
 
 ## Revision, put your commit number here
-* Sort from larger to smaller:
-* Without flag:
+* Sort from larger to smaller: 9e9669c0
+* Without flag: 47abb784
 
 ## Questions
 1. How this code can sort number from smaller to larger
