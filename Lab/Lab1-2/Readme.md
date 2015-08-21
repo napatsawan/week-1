@@ -5,10 +5,12 @@
 * Revise the code such that it can accept input from command line, put your commit number and answer question 1 below
 
 ## Revision, put your commit number here
-* Three functions:
-* Get input from command line:
+* Three functions: d3f0d7d5
+* Get input from command line: d3f0d7d5
+
+Napatsawan Somsuk 570611017
 
 ## Questions
 1. What are the limitations of your new code?
 
-Answer:
+Answer: user must input number between -2,147,483,648 to 2,147,483,647.
