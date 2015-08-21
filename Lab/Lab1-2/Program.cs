@@ -10,34 +10,49 @@ namespace Lab1_2
     {
         static void Main(string[] args)
         {
+            EnterNum a = new EnterNum();
+            a.enter();
+            Console.ReadKey();
+        }
+    }        
+    class EnterNum
+    {
+        public void enter()
+        {
+            string x;
+            Console.WriteLine("Enter Number:");
+            x = Console.ReadLine();
+            int[] enter;
+            enter = x.Split(' ').Select(y => Convert.ToInt32(y)).ToArray();
+            process(enter);
+            output(enter);
+        }
+        public void process(int[] enter)
+        {
             bool flag = true;
-
-            // input
-            int[] input = { 4, 5, 2, 8, 9, 1, 2, 4, 3, 1 };
-
-            // process
             while (flag)
             {
                 flag = false;
-                for (int i = 0; i != input.Length - 1; i++)
+                for(int i = 0; i != enter.Length -1; i++)
                 {
-                    if (input[i] > input[i + 1])
+                    if(enter[i] > enter[i + 1])
                     {
-                        int temp = input[i];
-                        input[i] = input[i + 1];
-                        input[i + 1] = temp;
+                        int temp = enter[i];
+                        enter[i] = enter[i + 1];
+                        enter[i + 1] = temp;
                         flag = true;
                     }
                 }
             }
-
-            // output
-            for (int i = 0; i != input.Length; i++)
+        }
+        public void output(int[] enter)
+        {
+            Console.WriteLine("Sort number: ");
+            for(int i = 0; i != enter.Length; i++)
             {
-                Console.Write(input[i]);
+                Console.Write(enter[i]);
                 Console.Write(" ");
             }
-            Console.ReadKey();
         }
     }
 }
