@@ -6,6 +6,8 @@
 * Change the code such that there is no flag variable, put the commit number below and answer question 5 
 test
 
+Napatsawan  Somsuk 570611017
+
 ## Revision, put your commit number here
 * Sort from larger to smaller:
 * Without flag:
@@ -13,20 +15,20 @@ test
 ## Questions
 1. How this code can sort number from smaller to larger
  
-Answer: 
+Answer: if input[i] more than input[i+1]. code is swap input[i+1] in front.
 
 2. What if two numbers equal, what will happen? 
 
-Answer: 
+Answer: code is no swap.
 
 3. How many times at line 24 will be executed (as a function of the size of input) 
 
-Answer: 
+Answer: 27 times
 
 4. Why we need flag variable ? 
 
-Answer: 
+Answer: because flag need for check correct of swap.
 
 5. When we remove the flag variable, the code will run faster or slower? in which scenario? 
 
-Answer:
+Answer: output is not correct and code will run faster.
